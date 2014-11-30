@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Between", "Between\Between.fsproj", "{59FA15A4-251C-41BD-8326-A38F0ABAADCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Between.Test", "Between.Test\Between.Test.csproj", "{632E53FC-8547-4329-A39E-4260D054A996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59FA15A4-251C-41BD-8326-A38F0ABAADCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FA15A4-251C-41BD-8326-A38F0ABAADCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FA15A4-251C-41BD-8326-A38F0ABAADCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FA15A4-251C-41BD-8326-A38F0ABAADCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{632E53FC-8547-4329-A39E-4260D054A996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{632E53FC-8547-4329-A39E-4260D054A996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{632E53FC-8547-4329-A39E-4260D054A996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{632E53FC-8547-4329-A39E-4260D054A996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
