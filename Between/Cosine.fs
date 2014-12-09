@@ -10,9 +10,7 @@ module Cosine =
         | [], _ -> c
         | _, [] -> c
         | aHead::aTail, bHead::bTail -> getShared aTail bTail ((aHead, bHead)::c)
-//        | aHead::aTail, bHead::bTail when fst aHead > fst bHead -> getShared a bTail c
-//        | aHead::aTail, bHead::bTail -> getShared aTail bTail ((fst aHead, (snd aHead, snd bHead))::c)
-    
+
     let ratingA e =
         fst e
         
