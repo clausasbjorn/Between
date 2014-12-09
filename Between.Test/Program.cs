@@ -25,8 +25,29 @@ namespace Between.Test
                         user1.Add(new Tuple<int, double>(j, (double)t[j]));
                     user2.Add(new Tuple<int, double>(j, (double)m[i][j]));
                 }
-                var coefficient = Pearsons.calculate(ListModule.OfSeq(user1), ListModule.OfSeq(user2));
+                var coefficient = Pearson.calculate(ListModule.OfSeq(user1), ListModule.OfSeq(user2));
                 Console.WriteLine(coefficient);
+            }
+
+            var ratings = new double[m[0].Length][];
+            for (int i = 0; i < m[0].Length; i++)
+            {
+                ratings[i] = new double[m.Length];
+                for (int j = 0; j < m.Length; j++)
+                {
+                    ratings[i][j] = m[j][i];
+                    Console.Write(m[j][i]);
+                }
+                Console.WriteLine();
+            }
+
+            for (int i = 0; i < ratings.Length; i++)
+            {
+                for (int j = 0; j < ratings.Length; j++)
+                {
+                    var cosine = Cosine.calculate(ListModule.OfSeq(ratings[i]), ListModule.OfSeq(ratings[j]));
+                    Console.WriteLine("Between #" + i + " and #" + j + ": " + cosine);
+                }
             }
 
             //var user1 = new List<Tuple<int, double>>(); //new FSharpList<Tuple<int, double>>(new Tuple<int, double>(5, 1), null);

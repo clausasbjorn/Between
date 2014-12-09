@@ -1,6 +1,13 @@
 ﻿namespace Between
 
-module Pearsons = 
+(* 
+    PEARSON CORRELATION COEFFICIENT
+    -
+    Calculates the similarity between two lists of ratings for items.
+    Takes two lists of tuples containing ( itemId, rating ) and returns a value between -1 and 1.
+    A high number indicates similarity between the listes.
+*)
+module Pearson = 
 
     let rec getShared a b c =
         match a, b with
